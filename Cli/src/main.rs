@@ -9,11 +9,21 @@ use clap::Parser;
 async fn main() {
     match &CliConfig::parse().command {
         Some(Commands::MyGlobalIp(MyGlobalIp)) => {
-            println!("MyGlobalIP called");
+            println!("MyGlobalIP called {:?}",MyGlobalIp.source);
         },
         Some(Commands::CheckCreds) => {
             println!("Checking credentials")
-        }
+        },
+        Some(Commands::MyInstallCommand(InstallConfig)) => {
+            match InstallConfig.operation {
+                cfg::CliOperation::Install => {
+                    println!("Installing some software : {}",InstallConfig.software)
+                },
+                cfg::CliOperation::Uninstall => {
+                    println!("Uninstall some software : {}",InstallConfig.software)
+                }
+            }
+        },
         None => {
             println!("Invalid command, press '-h' or '--help'");
         }

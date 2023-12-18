@@ -1,4 +1,4 @@
-use clap::{Parser, Subcommand, Args};
+use clap::{Parser, Subcommand, Args, ValueEnum};
 
 #[derive(Parser,Debug)]
 #[command(author = "Milos Stankovic", version = "1.8.0")]
@@ -15,12 +15,31 @@ pub enum Commands {
                                 Bla bla bla bla \n\
                                  More blah blah")]
    CheckCreds,
+    #[command(override_usage = "Example of install command with config operation")]
+    MyInstallCommand(InstallConfig),
 }
 
 
 #[derive(Args,Debug)]
 pub struct GlobalIpConfig {
     #[arg(long = "source")]
+    #[arg(short = 's')]
     pub source: String
+}
+
+#[derive(Args,Debug)]
+pub struct InstallConfig {
+    #[arg(long = "software")]
+    pub software:String,
+    #[arg(long = "operation")]
+    pub operation:CliOperation,
+}
+
+#[derive(Debug,Clone,ValueEnum)]
+pub enum CliOperation {
+    //Install something
+    Install,
+    //Uninstall something
+    Uninstall
 }
 

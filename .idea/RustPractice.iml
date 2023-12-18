@@ -5,9 +5,25 @@
       <sourceFolder url="file://$MODULE_DIR$/Section_1/hello_world/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Section_4/structs/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Section_5/enums_pattern/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ArcMutex/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Channels/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Cli/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Enums/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Errors/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lifetimes/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Models/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NewLib/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RunLocal/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Smartpointers/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Struct/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Threads/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tokio/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Traits/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UnitTests/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Section_1/hello_world/target" />
       <excludeFolder url="file://$MODULE_DIR$/Section_4/structs/target" />
       <excludeFolder url="file://$MODULE_DIR$/Section_5/enums_pattern/target" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
