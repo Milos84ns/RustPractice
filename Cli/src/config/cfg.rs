@@ -17,6 +17,8 @@ pub enum Commands {
    CheckCreds,
     #[command(override_usage = "Example of install command with config operation")]
     MyInstallCommand(InstallConfig),
+    #[command(override_usage = "Simple command to mimic echo")]
+    EchoCommand,
 }
 
 

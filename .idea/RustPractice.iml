@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Channels/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Cli/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Enums/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Environments/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Errors/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lifetimes/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Models/src" isTestSource="false" />

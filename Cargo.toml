@@ -1,6 +1,6 @@
 [workspace]
 members = [ "Struct", "Lifetimes", "Enums", "Tokio", "Threads", "UnitTests","NewLib",
-            "Models","Traits","RunLocal","Errors","Channels","Smartpointers","ArcMutex","Cli"]
+            "Models","Traits","RunLocal","Errors","Channels","Smartpointers","ArcMutex","Cli","Environments"]
 
 [workspace.package]
 authors = ["Milos stankovic","Alice <a@example.com>", "Bob <b@example.com>"]

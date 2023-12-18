@@ -1,6 +1,7 @@
 
 use crate::cfg::{CliConfig, Commands};
 use clap::Parser;
+use std::process::Command;
 #[path = "config/cfg.rs"] mod cfg;
 
 #[allow(warnings)]
@@ -24,6 +25,18 @@ async fn main() {
                 }
             }
         },
+        Some(Commands::EchoCommand) => {
+           let cmd = Command::new("sh")
+                .arg("-c")
+                .arg("echo hello")
+                .output()
+                .expect("failed to execute process");
+            println!("status: {}", cmd.status);
+            println!("stdout: {}", String::from_utf8_lossy(&cmd.stdout));
+            println!("stderr: {}", String::from_utf8_lossy(&cmd.stderr));
+
+        }
+
         None => {
             println!("Invalid command, press '-h' or '--help'");
         }
